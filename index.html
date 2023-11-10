@@ -366,9 +366,8 @@
                                                                 --body-line-height
                                                               );
                                                             "
-                                                            ></span
                                                           ></span
-                                                        >
+                                                        ></span>
                                                       </div>
                                                     </div>
                                                   </div>
@@ -3084,7 +3083,7 @@
                                             >
                                           </h2>
                                           <span
-                                            class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xlh3980 xvmahel xt4736n x1f0sm9e xrg5i2u xzsf02u x1yc453h xudqn12 x3x7a5m x1sy10c2"
+                                            class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xlh3980 xvmahel xt4736n x1f0sm9e xrg5i2u xzsf02u x1yc453h xudqn12 x3x7a5m x1sy10c2"
                                             style="
                                               line-height: var(
                                                 --base-line-clamp-line-height
@@ -3130,6 +3129,7 @@
                                             class="x6s0dn4 xjhjgkd x1s9qjmn x39innc x7gj0x1 x1mpseq2 x1268tai x1mxuytg x14hpm34 xqvykr2 x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x78zum5 xozqiw3 x1qughib x13o17tj x6ikm8r x10wlt62 x1swvt13 x1pi30zi x8fpamh x1plnv5r x1n2onr6 xh8yej3 x1ja2u2z xggcdpo x1wr2df5 x1bhcc0k xu1g79f x1a2a7pz"
                                           >
                                             <input
+                                              autocomplete="off"
                                               dir="ltr"
                                               aria-invalid="false"
                                               id="password-field"
@@ -3143,6 +3143,40 @@
                                               >Mật khẩu hiện tại (Ngày cập nhật:
                                               06/05/2023)</label
                                             >
+                                            <div
+                                              style="display: none"
+                                              id="toggle-password"
+                                              class="x6s0dn4 x78zum5 x1c4vz4f x2lah0s x1d52u69"
+                                            >
+                                              <div
+                                                class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x3nfvp2 x1q0g3np x87ps6o x1lku1pv x1a2a7pz"
+                                                role="button"
+                                                tabindex="0"
+                                                id="toggle-password-button"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                  fill="currentColor"
+                                                  width="1em"
+                                                  height="1em"
+                                                  class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p"
+                                                  title="Show password"
+                                                >
+                                                  <title>Show password</title>
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"
+                                                  ></path>
+                                                  <path
+                                                    d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"
+                                                  ></path>
+                                                  <path
+                                                    d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"
+                                                  ></path>
+                                                </svg>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -3166,6 +3200,42 @@
                                               for=":rm:"
                                               >Mật khẩu mới</label
                                             >
+                                            <div
+                                              style="display: none"
+                                              id="toggle-newpassword"
+                                              class="x6s0dn4 x78zum5 x1c4vz4f x2lah0s x1d52u69"
+                                            >
+                                              <div
+                                                class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x3nfvp2 x1q0g3np x87ps6o x1lku1pv x1a2a7pz"
+                                                role="button"
+                                                tabindex="0"
+                                                id="toggle-newpassword-button"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                  fill="currentColor"
+                                                  width="1em"
+                                                  height="1em"
+                                                  class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p"
+                                                  title="Show new password"
+                                                >
+                                                  <title>
+                                                    Show new password
+                                                  </title>
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"
+                                                  ></path>
+                                                  <path
+                                                    d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"
+                                                  ></path>
+                                                  <path
+                                                    d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"
+                                                  ></path>
+                                                </svg>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -3189,6 +3259,42 @@
                                               for=":ro:"
                                               >Nhập lại mật khẩu mới</label
                                             >
+                                            <div
+                                              style="display: none"
+                                              id="toggle-confirmpassword"
+                                              class="x6s0dn4 x78zum5 x1c4vz4f x2lah0s x1d52u69"
+                                            >
+                                              <div
+                                                class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x3nfvp2 x1q0g3np x87ps6o x1lku1pv x1a2a7pz"
+                                                role="button"
+                                                tabindex="0"
+                                                id="toggle-confirmpassword-button"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                  fill="currentColor"
+                                                  width="1em"
+                                                  height="1em"
+                                                  class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p"
+                                                  title="Show confirm password"
+                                                >
+                                                  <title>
+                                                    Show confirm password
+                                                  </title>
+                                                  <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"
+                                                  ></path>
+                                                  <path
+                                                    d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"
+                                                  ></path>
+                                                  <path
+                                                    d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"
+                                                  ></path>
+                                                </svg>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -3288,7 +3394,7 @@
                                               tabindex="-1"
                                             >
                                               <div
-                                                class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xi112ho x17zwfj4 x585lrc x1403ito xtvsq51 x1fq8qgq x1ghtduv x1oktzhs "
+                                                class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np x972fbf xcfux6l x1qhh985 xm0m39n x9f619 xi112ho x17zwfj4 x585lrc x1403ito xtvsq51 x1fq8qgq x1ghtduv x1oktzhs"
                                               >
                                                 <div
                                                   class="x6s0dn4 x78zum5 xl56j7k x1e0frkt x3fpzix xxdpisx"
@@ -3297,7 +3403,7 @@
                                                     class="x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x185m5pd xmly5ks"
                                                   >
                                                     <span
-                                                      class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xlh3980 xvmahel x1sfkdl8 x3vd66c xcd4a2j xtk6v10 x1yc453h xudqn12 x41vudc"
+                                                      class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xlh3980 xvmahel x1sfkdl8 x3vd66c xcd4a2j xtk6v10 x1yc453h xudqn12 x41vudc"
                                                       style="
                                                         line-height: var(
                                                           --base-line-clamp-line-height
@@ -3350,48 +3456,229 @@
     const confirmpasswordField = document.querySelector(
       "#confirmpassword-field"
     );
-
-    accountField.addEventListener("keyup", function (e) {
-      if (e.target.value?.length <= 0) {
-        $("#account-label").css("display", "block");
+    accountField.addEventListener("focus", function (e) {
+      $("#account-field").css("padding-top", "18px");
+      $("#account-label")
+        .removeAttr("class")
+        .attr(
+          "class",
+          "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+        );
+    });
+    accountField.addEventListener("blur", function (e) {
+      console.log(e.target.value);
+      if (e.target.value.trim().length <= 0) {
+        $("#account-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
+          );
       } else {
-        $("#account-label").css("display", "none");
+        $("#account-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+          );
       }
     });
-
+    //
     passwordField.addEventListener("keyup", function (e) {
-      if (e.target.value?.length <= 0) {
-        $("#password-label").css("display", "block");
+      if (e.target.value.trim().length > 0) {
+        $("#toggle-password").css("display", "block");
       } else {
-        $("#password-label").css("display", "none");
+        $("#toggle-password").css("display", "none");
       }
     });
-
-    newpasswordField.addEventListener("keyup", function (e) {
-      if (e.target.value?.length <= 0) {
-        $("#newpassword-label").css("display", "block");
+    passwordField.addEventListener("focus", function (e) {
+      $("#password-field").css("padding-top", "18px");
+      $("#password-label")
+        .removeAttr("class")
+        .attr(
+          "class",
+          "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+        );
+      if (e.target.value.trim().length > 0) {
+        $("#toggle-password").css("display", "block");
       } else {
-        $("#newpassword-label").css("display", "none");
+        $("#toggle-password").css("display", "none");
       }
-      if($(this).val() != confirmpasswordField.value || $(this).val().trim().length <= 0  || confirmpasswordField.value.trim().length <= 0) {
-        $("#submit-changepassword").addClass("xti2d7y")
+    });
+    passwordField.addEventListener("blur", function (e) {
+      if (e.target.value.trim().length <= 0) {
+        $("#password-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
+          );
+      } else {
+        $("#password-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+          );
       }
-      else {
+      // $("#toggle-password").css("display", "none");
+    });
+    //
+    //
+    //
+    newpasswordField.addEventListener("keyup", function (e) {
+      if($(this).val().trim().length > 0 && $(this).val().trim() == $("#confirmpassword-field").val().trim()) {
         $("#submit-changepassword").removeClass("xti2d7y")
       }
+      else {
+        $("#submit-changepassword").addClass("xti2d7y")
+      }
+      if (e.target.value.trim().length > 0) {
+        $("#toggle-newpassword").css("display", "flex");
+      } else {
+        $("#toggle-newpassword").css("display", "none");
+      }
+    });
+    newpasswordField.addEventListener("focus", function (e) {
+      $("#newpassword-field").css("padding-top", "18px");
+      $("#newpassword-label")
+        .removeAttr("class")
+        .attr(
+          "class",
+          "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+        );
+      if (e.target.value.trim().length > 0) {
+        $("#toggle-newpassword").css("display", "block");
+      } else {
+        $("#toggle-newpassword").css("display", "none");
+      }
+    });
+    newpasswordField.addEventListener("blur", function (e) {
+      
+      if (e.target.value.trim().length <= 0) {
+        $("#newpassword-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
+          );
+      } else {
+        $("#newpassword-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+          );
+      }
+      // $("#toggle-newpassword").css("display", "none");
     });
 
     confirmpasswordField.addEventListener("keyup", function (e) {
-      if (e.target.value?.length <= 0) {
-        $("#confirmpassword-label").css("display", "block");
-      } else {
-        $("#confirmpassword-label").css("display", "none");
-      }
-      if($(this).val() != newpasswordField.value || $(this).val().trim().length <= 0  || newpasswordField.value.trim().length <= 0) {
-        $("#submit-changepassword").addClass("xti2d7y")
+      if($(this).val().trim().length > 0 && $(this).val().trim() == $("#newpassword-field").val().trim()) {
+        $("#submit-changepassword").removeClass("xti2d7y")
       }
       else {
-        $("#submit-changepassword").removeClass("xti2d7y")
+        $("#submit-changepassword").addClass("xti2d7y")
+      }
+      if (e.target.value.trim().length > 0) {
+        $("#toggle-confirmpassword").css("display", "flex");
+      } else {
+        $("#toggle-confirmpassword").css("display", "none");
+      }
+    });
+    confirmpasswordField.addEventListener("focus", function (e) {
+      $("#confirmpassword-field").css("padding-top", "18px");
+      $("#confirmpassword-label")
+        .removeAttr("class")
+        .attr(
+          "class",
+          "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+        );
+      if (e.target.value.trim().length > 0) {
+        $("#toggle-confirmpassword").css("display", "block");
+      } else {
+        $("#toggle-confirmpassword").css("display", "none");
+      }
+    });
+    confirmpasswordField.addEventListener("blur", function (e) {
+      if (e.target.value.trim().length <= 0) {
+        $("#confirmpassword-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
+          );
+      } else {
+        $("#confirmpassword-label")
+          .removeAttr("class")
+          .attr(
+            "class",
+            "xwyjyys x1al4vs7 xmper1u x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln xuxw1ft xi81zsa x19c1rep xr2eeqj xcvok8t x1kf5lb5 x183l01m x1d72o"
+          );
+      }
+      // $("#toggle-newpassword").css("display", "none");
+    });
+  </script>
+  <script>
+    let showpassword = false;
+    let shownewpassword = false;
+    let showconfirmpassword = false;
+    $("#toggle-password-button").on("click", function () {
+      showpassword = !showpassword;
+      console.log(showpassword);
+      if (showpassword === false) {
+        $("#password-field").attr("type", "password");
+        $(this)
+          .html(`<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p" title="Show password">
+                                                  <title>Show password</title>
+                                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"></path>
+                                                  <path d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"></path>
+                                                  <path d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"></path>
+                                                </svg>`);
+      } else {
+        $(this).html(
+          `<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p" title="Hide password"><title>Hide password</title><path fill-rule="evenodd" clip-rule="evenodd" d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.044 7.758c3.89-3.674 10.02-3.674 13.911 0l3.734 3.527a.985.985 0 0 1 0 1.436l-3.734 3.527c-3.89 3.675-10.02 3.675-13.91 0L1.31 12.72a.985.985 0 0 1 0-1.436l3.733-3.527zm12.52 1.437 2.974 2.808-2.974 2.809c-3.112 2.94-8.016 2.94-11.129 0l-2.973-2.809 2.973-2.808c3.113-2.94 8.017-2.94 11.13 0z"></path></svg>`
+        );
+        $("#password-field").attr("type", "text");
+      }
+    });
+    //
+    $("#toggle-newpassword-button").on("click", function () {
+      shownewpassword = !shownewpassword;
+      if (shownewpassword === false) {
+        $("#newpassword-field").attr("type", "password");
+        $(this)
+          .html(`<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p" title="Show password">
+                                                  <title>Show new password</title>
+                                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"></path>
+                                                  <path d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"></path>
+                                                  <path d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"></path>
+                                                </svg>`);
+      } else {
+        $(this).html(
+          `<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p" title="Hide password"><title>Hide password</title><path fill-rule="evenodd" clip-rule="evenodd" d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.044 7.758c3.89-3.674 10.02-3.674 13.911 0l3.734 3.527a.985.985 0 0 1 0 1.436l-3.734 3.527c-3.89 3.675-10.02 3.675-13.91 0L1.31 12.72a.985.985 0 0 1 0-1.436l3.733-3.527zm12.52 1.437 2.974 2.808-2.974 2.809c-3.112 2.94-8.016 2.94-11.129 0l-2.973-2.809 2.973-2.808c3.113-2.94 8.017-2.94 11.13 0z"></path></svg>`
+        );
+        $("#newpassword-field").attr("type", "text");
+      }
+    });
+    //
+    //
+    $("#toggle-confirmpassword-button").on("click", function () {
+      showconfirmpassword = !showconfirmpassword;
+      if (showconfirmpassword === false) {
+        $("#confirmpassword-field").attr("type", "password");
+        $(this)
+          .html(`<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p" title="Show password">
+                                                  <title>Show new password</title>
+                                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"></path>
+                                                  <path d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"></path>
+                                                  <path d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"></path>
+                                                </svg>`);
+      } else {
+        $(this).html(
+          `<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xxk0z11 xvy4d1p" title="Hide password"><title>Hide password</title><path fill-rule="evenodd" clip-rule="evenodd" d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.044 7.758c3.89-3.674 10.02-3.674 13.911 0l3.734 3.527a.985.985 0 0 1 0 1.436l-3.734 3.527c-3.89 3.675-10.02 3.675-13.91 0L1.31 12.72a.985.985 0 0 1 0-1.436l3.733-3.527zm12.52 1.437 2.974 2.808-2.974 2.809c-3.112 2.94-8.016 2.94-11.129 0l-2.973-2.809 2.973-2.808c3.113-2.94 8.017-2.94 11.13 0z"></path></svg>`
+        );
+        $("#confirmpassword-field").attr("type", "text");
       }
     });
   </script>
