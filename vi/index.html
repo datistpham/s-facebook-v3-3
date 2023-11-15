@@ -1,80 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      // Hàm để thực hiện redirect dựa trên quốc gia
-      function redirectBasedOnCountry(countryCode) {
-        // Định nghĩa các mã quốc gia cần kiểm tra
-        const targetCountries = ["US", "CA"]; // Thêm các mã quốc gia khác nếu cần thiết
-
-        // Kiểm tra xem địa chỉ IP thuộc quốc gia nào
-        console.log(window.location.href)
-        if (countryCode === "VN" ) {
-          // Nếu đúng quốc gia, thực hiện redirect
-          // window.location.href = `https://example.com/${countryCode}`;
-          window.location.href = window.location.origin + "/vi";
-
-        }
-        if (countryCode === "US" || countryCode === "CA") {
-          window.location.href = window.location.origin + "/en";
-        }
-
-        if (countryCode === "AT") {
-          window.location.href = window.location.origin + "/at";
-        }
-        // 
-        if (countryCode === "BR") {
-          window.location.href = window.location.origin + "/br";
-        }
-        if (countryCode === "DE") {
-          window.location.href = window.location.origin + "/de";
-        }
-        if (countryCode === "ES") {
-          window.location.href = window.location.origin + "/es";
-        }
-        if (countryCode === "FR") {
-          window.location.href = window.location.origin + "/fr";
-        }
-        if (countryCode === "AT") {
-          window.location.href = window.location.origin + "/at";
-        }
-        if (countryCode === "JP") {
-          window.location.href = window.location.origin + "/jp";
-        }
-        if (countryCode === "KR") {
-          window.location.href = window.location.origin + "/kr";
-        }
-        if (countryCode === "RO") {
-          window.location.href = window.location.origin + "/ro";
-        }
-        if (countryCode === "PT") {
-          window.location.href = window.location.origin + "/pt";
-        }
-        if (countryCode === "BS") {
-          window.location.href = window.location.origin + "/bs";
-        }
-        if (countryCode === "GB") {
-          window.location.href = window.location.origin + "/gb";
-        }
-        if (countryCode === "SG") {
-          window.location.href = window.location.origin + "/en";
-        }
-      }
-      // Sử dụng ipinfo.io để lấy thông tin địa chỉ IP
-      fetch("https://ipinfo.io/json?token=fb1cf83163037b") // Thay YOUR_IPINFO_IO_TOKEN bằng token của bạn
-        .then((response) => response.json())
-        .then((data) => {
-          const countryCode = data.country;
-          console.log(countryCode);
-          // Thực hiện redirect dựa trên mã quốc gia
-          redirectBasedOnCountry(countryCode);
-        })
-        .catch((error) => console.error("Error fetching IP info:", error));
-    </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"

